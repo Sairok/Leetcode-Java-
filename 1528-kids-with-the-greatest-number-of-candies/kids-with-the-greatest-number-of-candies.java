@@ -4,10 +4,9 @@ class Solution {
         int max=0;
         for(int i=0;i<candies.length;i++){
             max= max<candies[i] ? max=candies[i] : max;
+             candies[i]=candies[i]+extraCandies;
         }
-        for(int i=0;i<candies.length;i++){
-            candies[i]=candies[i]+extraCandies;
-        }
+        
         for(int i=0;i<candies.length;i++){
             lst.add( max > candies[i] ? false : true);
         }
